@@ -31,5 +31,6 @@ namespace SwissKnife.Libs.Common.Constants
         public const string APPLICATION_JSON = "application/json";
         public const string FORM_URL_ENCODED = "application/x-www-form-urlencoded";
         public const string COOKIE = "Cookie";
+        public const string HTTP_REQUEST_AUDIT = "HttpRequestAudit";
     }
 }
