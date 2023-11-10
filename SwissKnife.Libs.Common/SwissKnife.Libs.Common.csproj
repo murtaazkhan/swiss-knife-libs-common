@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+    <Title>Swiss Knife Common Library</Title>
+    <Description>This library serves as a common library project to be used by services for common operations.</Description>
+    <RepositoryUrl>https://github.com/murtaazkhan/swiss-knife-libs-common</RepositoryUrl>
+    <PackageReleaseNotes>Initial Release with Common Helpers</PackageReleaseNotes>
+    <PackageTags>Common;Helpers;Constants;</PackageTags>
+    <Version>0.0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <NoWarn>NU5104,CS1998</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />  
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.31.0" />
+  </ItemGroup>
+
+</Project>
