@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SwissKnife.Libs.Audit.Models
+namespace SwissKnife.Libs.Common.Audit.Models
 {
     /// <summary>
     /// Contains the Request Audit Entity.

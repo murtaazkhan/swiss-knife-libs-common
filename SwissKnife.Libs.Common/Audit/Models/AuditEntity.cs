@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SwissKnife.Libs.Audit.Models
+namespace SwissKnife.Libs.Common.Audit.Models
 {
     /// <summary>
     /// Contains Audit Entity.

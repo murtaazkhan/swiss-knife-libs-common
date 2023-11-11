@@ -1,10 +1,10 @@
-﻿using SwissKnife.Libs.Audit.Models;
+﻿using SwissKnife.Libs.Common.Audit.Models;
 using SwissKnife.Libs.Common.Constants;
 using SwissKnife.Libs.Common.Helpers;
 using Microsoft.AspNetCore.Http;
 using System.Diagnostics;
 
-namespace SwissKnife.Libs.Audit.Middlewares
+namespace SwissKnife.Libs.Common.Audit.Middlewares
 {
     /// <summary>
     /// Http Request Auditing Middleware

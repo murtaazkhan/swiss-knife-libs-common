@@ -1,4 +1,4 @@
-﻿namespace SwissKnife.Libs.Audit.Models
+﻿namespace SwissKnife.Libs.Common.Audit.Models
 {
     public class HttpRequestAuditOptions
     {

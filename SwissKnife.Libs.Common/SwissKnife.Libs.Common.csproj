@@ -10,9 +10,9 @@
     <Title>Swiss Knife Common Library</Title>
     <Description>This library serves as a common library project to be used by services for common operations.</Description>
     <RepositoryUrl>https://github.com/murtaazkhan/swiss-knife-libs-common</RepositoryUrl>
-    <PackageReleaseNotes>Initial Release with Common Helpers</PackageReleaseNotes>
+    <PackageReleaseNotes>Added SDK Extensions and Audit Module</PackageReleaseNotes>
     <PackageTags>Common;Helpers;Constants;</PackageTags>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -20,9 +20,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />  
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.31.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="HotChocolate.AspNetCore" Version="13.4.0" />
+    <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.4.0" />
+ 
   </ItemGroup>
 
 </Project>
