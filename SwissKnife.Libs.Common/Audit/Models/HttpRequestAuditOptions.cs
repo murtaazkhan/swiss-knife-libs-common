@@ -1,7 +1,7 @@
-﻿namespace SwissKnife.Libs.Common.Audit.Models
+﻿namespace SwissKnife.Libs.Common.Audit.Models;
+
+public class HttpRequestAuditOptions
 {
-    public class HttpRequestAuditOptions
-    {
-        public bool UseDatabase { get; set; }
-    }
+    public bool UseDatabase { get; set; }
 }
+

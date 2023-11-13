@@ -6,6 +6,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 namespace SwissKnife.Libs.Common.Extensions;
+
+/// <summary>
+/// Contains Service builder targeting .net 7 
+/// </summary>
 public static class ServiceBuilder
 {
     /// <summary>

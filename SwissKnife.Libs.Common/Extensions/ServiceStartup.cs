@@ -8,7 +8,7 @@ using System.Diagnostics;
 namespace SwissKnife.Libs.Common.Extensions;
 
 /// <summary>
-/// Contains the Integration Startup
+/// Contains the Service Startup
 /// </summary>
 public class ServiceStartup
 {

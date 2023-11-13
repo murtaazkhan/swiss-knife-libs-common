@@ -4,12 +4,12 @@ using SwissKnife.Libs.Common.Helpers;
 using Microsoft.AspNetCore.Http;
 using System.Diagnostics;
 
-namespace SwissKnife.Libs.Common.Audit.Middlewares
-{
-    /// <summary>
-    /// Http Request Auditing Middleware
-    /// </summary>
-    public class HttpRequestAuditMiddleware
+namespace SwissKnife.Libs.Common.Audit.Middlewares;
+
+/// <summary>
+/// Http Request Auditing Middleware
+/// </summary>
+public class HttpRequestAuditMiddleware
     {
         /// <summary>
         /// Http Request Delegate
@@ -89,4 +89,4 @@ namespace SwissKnife.Libs.Common.Audit.Middlewares
         }
         #endregion
     }
-}
+
