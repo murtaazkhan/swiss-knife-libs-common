@@ -18,7 +18,7 @@ jobs:
 
     - name: Increment Version Tag
       id: increment_version
-      uses: warrenbuckley/Setup.NET-Core-Version@v1
+      uses: emgarten/action-dotnet-version@v1
       with:
         version-spec: 'major.minor.patch'
 
