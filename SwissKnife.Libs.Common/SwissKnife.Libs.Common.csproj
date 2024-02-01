@@ -12,7 +12,6 @@
     <RepositoryUrl>https://github.com/murtaazkhan/swiss-knife-libs-common</RepositoryUrl>
     <PackageReleaseNotes>Added SDK Extensions and Audit Module</PackageReleaseNotes>
     <PackageTags>Common;Helpers;Constants;</PackageTags>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Version>1.0.4</Version>
   </PropertyGroup>
 
@@ -33,10 +32,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
     <PackageReference Include="HotChocolate.AspNetCore" Version="13.4.0" />
     <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.4.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="../README.md" Pack="true" PackagePath="\"/>
+ 
   </ItemGroup>
 
 </Project>
