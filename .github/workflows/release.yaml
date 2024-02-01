@@ -16,15 +16,6 @@ jobs:
     - name: Setup .NET SDK
       uses: actions/setup-dotnet@v1
 
-    - name: Increment Version Tag
-      id: increment_version
-      uses: emgarten/action-dotnet-version@v1
-      with:
-        version-spec: 'major.minor.patch'
-
-    - name: Update Version Tag in .csproj
-      run: sed -i "s/<Version>.*<\/Version>/<Version>${{ steps.increment_version.outputs.version }}<\/Version>/" path/to/your/project.csproj
-
     - name: Build
       run: dotnet build -c Release
 
