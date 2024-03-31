@@ -37,6 +37,16 @@ public static class ServiceBuilder
             services.AddControllers();
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin()
+                            .AllowAnyMethod()
+                            .AllowAnyHeader();
+                    });
+            });
         }
         catch (Exception value)
         {
@@ -63,6 +73,7 @@ public static class ServiceBuilder
             app.UseSwaggerUI();
         }
 
+        app.UseCors("CorsPolicy");
         app.UseRouting();
         app.UseEndpoints(delegate (IEndpointRouteBuilder endpoints)
         {
