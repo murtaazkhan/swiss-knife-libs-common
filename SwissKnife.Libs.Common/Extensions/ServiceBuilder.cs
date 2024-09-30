@@ -26,6 +26,12 @@ public static class ServiceBuilder
         return app;
     }
 
+    public static WebApplicationBuilder UseCustomMiddleware<TMiddleware>(this WebApplicationBuilder builder) where TMiddleware: class
+    {
+        // Add a delegate that will configure the middleware when the app is built
+        builder.Services.AddSingleton<IStartupFilter>(new MiddlewareStartupFilter<TMiddleware>());
+        return builder;
+    }
     #region Private Methods
     private static IServiceCollection ConfigureServices(this IServiceCollection services)
     {
@@ -82,6 +88,18 @@ public static class ServiceBuilder
         });
 
     }
-    #endregion
-}
 
+    private class MiddlewareStartupFilter<TMiddleware> : IStartupFilter where TMiddleware : class
+    {
+        public Action<IApplicationBuilder> Configure(Action<IApplicationBuilder> next)
+        {
+            return app =>
+            {
+                app.UseMiddleware<TMiddleware>();
+                next(app);
+            };
+        }
+    }
+    #endregion
+
+}
