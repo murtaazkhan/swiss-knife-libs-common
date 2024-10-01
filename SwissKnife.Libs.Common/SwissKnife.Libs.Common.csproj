@@ -10,9 +10,10 @@
     <Title>Swiss Knife Common Library</Title>
     <Description>This library serves as a common library project to be used by services for common operations.</Description>
     <RepositoryUrl>https://github.com/murtaazkhan/swiss-knife-libs-common</RepositoryUrl>
-    <PackageReleaseNotes>Added Extension method to add middlewares</PackageReleaseNotes>
+    <PackageReleaseNotes>Updated Jwt Helper with ValidateJwtToken Method</PackageReleaseNotes>
     <PackageTags>Common;Helpers;Constants;</PackageTags>
-    <Version>1.0.6</Version>
+    <Version>1.0.7</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -30,9 +31,11 @@
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
-    <PackageReference Include="HotChocolate.AspNetCore" Version="13.4.0" />
-    <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.4.0" />
- 
+    <PackageReference Include="HotChocolate.AspNetCore" Version="13.9.14" />
+    <PackageReference Include="HotChocolate.AspNetCore.Authorization" Version="13.9.14" />
+    <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.9.14" />
+    
+    <None Include="..\README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>
